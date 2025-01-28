@@ -3,11 +3,11 @@ import { assets } from '../assets/assets'
 
 const Search = () => {
   return (
-    <div className='max-w-[848px] w-full flex gap-[32px] h-[64px] rounded-[1000px] py-[8px] pl-[32px] pr-[8px] bg-white items-center'>
+    <div className='max-w-[848px] w-full flex  gap-[4px] sm:gap-[16px] md:gap-[32px] h-[64px] rounded-[1000px] py-[8px] pl-[32px] pr-[8px] bg-white items-center'>
       {/* first section */}
       <div className='max-w-[193px] w-full h-[36px]'>
         <p className='h-[16px] font-600 text-[12px] leading-[16px] text-black pl-1'>Locations</p>
-        <select className='h-[20px] font-400 text-[14px] leading-[20px] text-[#6B7280] outline-none pr-16'>
+        <select className='h-[20px] font-400 text-[14px] leading-[20px] text-[#6B7280] outline-none md:pr-16'>
         <option value="Sandton">Select a Location</option>
           <option value="Sandton">Sandton</option>
           <option value="Johannesburg">Johannesburg</option>

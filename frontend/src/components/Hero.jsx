@@ -6,11 +6,10 @@ import Rectangle from './Rectangle'
 
 const Hero = () => {
   return (
-    <div className='h-[977px] pt-[16px] pb-[96px] gap-[24px] flex flex-col items-center bg-black text-white px-4 sm:px-[10] md:px-[16] lg:px-20'>
+    <div className='pt-[16px] pb-[90px] gap-[24px] flex flex-col items-center bg-black text-white px-4 sm:px-[10] md:px-[16] lg:px-20 flex-grow'>
       <HeroNavbar />
       <Search />
       <BigCard />
-      <Rectangle />
     </div>
   )
 }
