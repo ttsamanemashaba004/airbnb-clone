@@ -4,6 +4,10 @@ import menu from './menu.svg'
 import avatar from './avatar.svg'
 import search_icon from './search_icon.svg'
 import bigcard from './bigcard.jpg'
+import sandton from './sandton.jpg'
+import joburg from './joburg.jpg'
+import woodmead from './woodmead.jpg'
+import hyde from './hyde.jpg'
 
 export const assets = {
     white_logo,
@@ -11,6 +15,10 @@ export const assets = {
     menu,
     avatar,
     search_icon,
-    bigcard
+    bigcard,
+    sandton,
+    joburg,
+    woodmead,
+    hyde
 
 }
