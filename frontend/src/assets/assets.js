@@ -8,6 +8,8 @@ import sandton from './sandton.jpg'
 import joburg from './joburg.jpg'
 import woodmead from './woodmead.jpg'
 import hyde from './hyde.jpg'
+import unsplashOne from './unsplashOne.jpg'
+import unsplashTwo from './unsplashTwo.jpg'
 
 export const assets = {
     white_logo,
@@ -19,6 +21,8 @@ export const assets = {
     sandton,
     joburg,
     woodmead,
-    hyde
+    hyde,
+    unsplashOne,
+    unsplashTwo
 
 }
