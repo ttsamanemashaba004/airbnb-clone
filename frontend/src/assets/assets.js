@@ -10,6 +10,8 @@ import woodmead from './woodmead.jpg'
 import hyde from './hyde.jpg'
 import unsplashOne from './unsplashOne.jpg'
 import unsplashTwo from './unsplashTwo.jpg'
+import giftcard from './giftcard.jpg'
+import woman from './woman.jpg'
 
 export const assets = {
     white_logo,
@@ -23,6 +25,8 @@ export const assets = {
     woodmead,
     hyde,
     unsplashOne,
-    unsplashTwo
+    unsplashTwo,
+    giftcard,
+    woman
 
 }
