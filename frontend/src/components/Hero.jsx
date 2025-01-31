@@ -6,7 +6,7 @@ import Rectangle from './Rectangle'
 
 const Hero = () => {
   return (
-    <div className='pt-[16px] pb-[90px] gap-[24px] flex flex-col items-center bg-black text-white px-4 sm:px-[10] md:px-[16] lg:px-20 flex-grow'>
+    <div className="pt-4 pb-20 gap-6 flex flex-col items-center bg-black text-white px-4 sm:px-10 md:px-16 lg:px-20 flex-grow">
       <HeroNavbar />
       <Search />
       <BigCard />

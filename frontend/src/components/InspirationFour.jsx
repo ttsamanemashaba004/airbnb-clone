@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const InspirationFour = () => {
   return (
-    <div className="flex flex-col w-full  justify-center relative overflow-hidden h-[640px]">
+    <div className="flex flex-col w-full  justify-center relative overflow-hidden h-[640px] px-4 sm:px-[10] md:px-[16] lg:px-20">
       <img
         className=" w-full h-full  object-cover rounded-[8px]"
         src={assets.woman}

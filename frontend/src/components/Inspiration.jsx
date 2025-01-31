@@ -1,20 +1,22 @@
-import React from 'react'
-import InspirationOne from './InspirationOne'
-import InspirationTwo from './InspirationTwo'
-import InspirationThree from './InspirationThree'
-import InspirationFour from './InspirationFour'
-import PreFooter from './PreFooter'
+import React from "react";
+import InspirationOne from "./InspirationOne";
+import InspirationTwo from "./InspirationTwo";
+import InspirationThree from "./InspirationThree";
+import InspirationFour from "./InspirationFour";
+import PreFooter from "./PreFooter";
 
 const Inspiration = () => {
   return (
-    <div className='h-[3096px] flex flex-col gap-[96px] py-[96px] bg-white px-4 sm:px-[10] md:px-[16] lg:px-20'>
+    <div className="h-[2952px] flex flex-col gap-[96px] pt-[48px] bg-white ">
       <InspirationOne />
       <InspirationTwo />
       <InspirationThree />
       <InspirationFour />
-      <PreFooter />
+      <div className="bg-[#f7f7f7] lg:px-[0px] w-full pb-[48px] pt-[48px]">
+        <PreFooter />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Inspiration
+export default Inspiration;

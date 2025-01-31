@@ -12,6 +12,11 @@ import unsplashOne from './unsplashOne.jpg'
 import unsplashTwo from './unsplashTwo.jpg'
 import giftcard from './giftcard.jpg'
 import woman from './woman.jpg'
+import dollar from './dollar.svg'
+import facebook from './facebook.svg'
+import twitter from './twitter.svg'
+import instagram from './instagram.svg'
+import globe2 from './globe2.svg'
 
 export const assets = {
     white_logo,
@@ -27,6 +32,11 @@ export const assets = {
     unsplashOne,
     unsplashTwo,
     giftcard,
-    woman
+    woman,
+    dollar,
+    facebook,
+    twitter,
+    instagram,
+    globe2
 
 }

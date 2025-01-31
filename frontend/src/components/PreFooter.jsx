@@ -9,9 +9,9 @@ const PreFooter = () => {
   const [lineSixVisible, setLineSixVisible] = useState(false);
 
   return (
-    <div className="w-full h-[304px] flex flex-col gap-[32px]">
+    <div className="w-full max-w-[1130px] m-auto h-[304px] flex flex-col gap-[32px] ">
       {/* Header */}
-      <div className="w-full h-[88px] flex flex-col gap=[16px]">
+      <div className="w-full  h-[88px] flex flex-col gap=[16px]">
         {/* Inspiration text */}
         <div className="w-full h-[32px]">
           <p className="font-500 text-[24px] leading-[32px] text-black">
@@ -153,7 +153,9 @@ const PreFooter = () => {
             />
           </div>
         </div>
+        <hr />
       </div>
+      
       {/* Row 1 */}
       <div className="w-ful h-[40px] flex gap-[24px]">
         <div className="max-w-[302px] w-full h-[40px]">
@@ -211,6 +213,7 @@ const PreFooter = () => {
             <p className="w-full h=[20px] font-400 text-[14px] leading-[20px] text-[#6B7280]">California</p>
         </div>
       </div>
+     
     </div>
   );
 };

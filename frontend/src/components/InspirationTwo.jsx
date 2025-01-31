@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const InspirationTwo = () => {
   return (
-    <div className="flex flex-col w-full h-[720px] gap-[48px]">
+    <div className="flex flex-col w-full h-[720px] gap-[48px] px-4 sm:px-[10] md:px-[16] lg:px-20">
       <p className="h-[44px] font-500 text-[36px] leading-[44px] text-black">
         Discover Airbnb Experiences
       </p>

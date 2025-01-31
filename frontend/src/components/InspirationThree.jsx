@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const InspirationThree = () => {
   return (
-    <div className='flex w-full h-[320px] gap-[48px] items-center justify-between'>
+    <div className='flex w-full h-[320px] gap-[48px] items-center justify-between px-4 sm:px-[10] md:px-[16] lg:px-20'>
         {/* Left side */}
         <div className='  max-w-[377.78px] flex flex-col gap-[24px]'>
             <p className='h-[112px] font-500 text-[48px] leading-[56px] max-w-[377.78px]'>Shop Airbnb <br />gift cards</p>
