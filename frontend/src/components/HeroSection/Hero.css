@@ -1,0 +1,38 @@
+.hero_container{
+    width: 100%;
+    height: auto;
+    padding: 1rem 5% 6rem 5%;
+    gap: 1.5rem;
+    background: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for responsiveness */
+/* Adjust styles for tables */
+@media (max-width: 768px){
+    .hero_container{
+        width: 100%;
+        gap: 1rem;
+        padding: 0.5rem 3% 4rem 3%;
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px){
+    .hero_container{
+        width: 100%;
+        gap: 0.5rem;
+        padding: 0.5rem 2% 3rem 2%;
+    }
+}
+
