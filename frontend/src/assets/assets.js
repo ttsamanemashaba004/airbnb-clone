@@ -4,6 +4,7 @@ import hero from './hero.jpg'
 import menu from './menu.png'
 import search from './search.png'
 import down_arrow from './down-arrow.png'
+import avatar from './Avatar.png'
 
 export const assets = {
     airbnb_logo,
@@ -11,5 +12,6 @@ export const assets = {
     hero,
     menu,
     search,
-    down_arrow
+    down_arrow,
+    avatar
 }
