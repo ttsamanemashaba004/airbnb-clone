@@ -48,6 +48,74 @@
   color: #6b7280;
 }
 
+.react-datepicker__navigation,
+.react-datepicker__aria-live {
+  display: none;
+}
+
+.date-picker {
+  width: 90%;
+  border: none;
+  cursor: pointer;
+}
+
+/* Custom Date Picker Styles */
+.custom-datepicker-popper {
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.react-datepicker {
+  display: flex;
+}
+
+.react-datepicker__month-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.react-datepicker__header {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+  padding: 10px;
+  width: fit-content;
+}
+
+.react-datepicker__day-names,
+.react-datepicker__week {
+  display: flex;
+  justify-content: space-between;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  border-radius: 50%;
+}
+
+.react-datepicker__day--selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.react-datepicker__day:hover {
+  background-color: #f0f0f0;
+}
+
 select {
   width: 80%;
   border: none;
@@ -116,6 +184,15 @@ select {
     width: 1.25rem;
     height: 1.25rem;
   }
+
+  .date-picker {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .react-datepicker {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
@@ -153,6 +230,33 @@ select {
     position: relative;
     left: 0.01rem;
   }
+
+  .react-datepicker__month-container {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    position: relative;
+    top: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .react-datepicker__header {
+    width: 100%;
+    font-size: 5px;
+    flex: 1;
+  }
+
+  .react-datepicker__month{
+    flex: 1;
+  }
+
+  .react-datepicker__day-name,
+  .react-datepicker__day {
+    width: 10px;
+    height: 10px;
+    font-size: 5px;
+  }
 }
 
 @media (max-width: 605px) {
@@ -165,20 +269,21 @@ select {
     min-width: 113px;
   }
 
-  .inner, .outer2{
+  .inner,
+  .outer2 {
     flex: 1;
   }
 
   select {
     appearance: none;
-    
+
     position: relative;
     right: 0.1rem;
   }
 }
 
-@media(max-width:670px){
-    select{
-        padding-right: 0rem;
-    }
+@media (max-width: 670px) {
+  select {
+    padding-right: 0rem;
+  }
 }

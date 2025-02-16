@@ -121,8 +121,18 @@
   }
 }
 
+@media (max-width: 745px) {
+  .navbar_container{
+    display: none;
+  }
+}
+
 /* Styles for mobile device */
 @media (max-width: 460px) {
+  .navbar_container {
+    display: none;
+  }
+
   .logo {
     height: auto;
     width: 4.5rem;
