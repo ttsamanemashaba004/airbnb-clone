@@ -11,6 +11,31 @@
   background-color: #fff;
   color: black;
 }
+.react-datepicker-wrapper {
+  
+  width: 90%;
+  height: 100%;
+  display: flex;
+}
+
+.react-datepicker__input-container {
+ 
+  width: 90%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  
+}
+
+.react-datepicker-wrapper input {
+  
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  flex: 1;
+}
+
+
 
 .item {
   display: flex;
@@ -247,7 +272,7 @@ select {
     flex: 1;
   }
 
-  .react-datepicker__month{
+  .react-datepicker__month {
     flex: 1;
   }
 
