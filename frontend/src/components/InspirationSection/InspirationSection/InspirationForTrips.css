@@ -1,0 +1,34 @@
+.trips_container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.trips_title {
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 2.75px;
+  letter-spacing: 0%;
+  color: black;
+}
+
+.city_cards {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Responsiveness */
+/* tablet */
+@media (min-width: 640px) {
+ 
+}
+
+/* mobile */
+@media (min-width: 768px) {
+ 
+}
+
+@media (min-width: 1024px) {
+  
+}
