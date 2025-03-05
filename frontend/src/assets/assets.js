@@ -27,6 +27,8 @@ import red_logo from './red_logo.svg'
 import search2 from './search_icon2.svg'
 import globe3 from './globe3.svg'
 import menu2 from './menu2.svg'
+import heart from './heart.svg'
+import star from './star.svg'
 
 
 export const assets = {
@@ -53,21 +55,55 @@ export const assets = {
     red_logo,
     search2,
     globe3,
-    menu2
+    menu2,
+    heart,
+    star
 }
 
-export const products = [
+export const locations = [
     {
         _id: "aaaaa",
         listing_title: "Bordeaux Getaway",
-        location: "JBordeaux",
+        location: "Bordeaux",
         description: "Come and stay in this superb duplex T2, in the heart of the historic center of Bordeaux.Spacious and bright, in a real Bordeaux building in exposed stone, you will enjoy all thecharms of the city thanks to its ideal location. Close to many shops, bars andrestaurants, you can access the apartment by tram A and C and bus routes 27 and 44.",
         enhanced_cleaning: true,
         self_checkin: true,
         amenities: ["Wifi", "Kitchen", "Free Parking"], // you can add more than one
         price: 200,
         type: "Entire Unit", // Other options: Room, Whole Villa
-        guest: 3,
+        guests: "4-6",
+        bedrooms: 4,
+        bathrooms: 2,
+        image: [bordeaux,bord1, bord2, bord3, bord4] // you can add more than one
+
+    },
+    {
+        _id: "aaaaa",
+        listing_title: "Bordeaux Getaway",
+        location: "Bordeaux",
+        description: "Come and stay in this superb duplex T2, in the heart of the historic center of Bordeaux.Spacious and bright, in a real Bordeaux building in exposed stone, you will enjoy all thecharms of the city thanks to its ideal location. Close to many shops, bars andrestaurants, you can access the apartment by tram A and C and bus routes 27 and 44.",
+        enhanced_cleaning: true,
+        self_checkin: true,
+        amenities: ["Wifi", "Kitchen", "Free Parking"], // you can add more than one
+        price: 200,
+        type: "Entire Unit", // Other options: Room, Whole Villa
+        guests: "4-6",
+        bedrooms: 4,
+        bathrooms: 2,
+        image: [bordeaux,bord1, bord2, bord3, bord4] // you can add more than one
+
+    },
+    {
+        _id: "aaaaa",
+        listing_title: "Bordeaux Getaway",
+        location: "Bordeaux",
+        description: "Come and stay in this superb duplex T2, in the heart of the historic center of Bordeaux.Spacious and bright, in a real Bordeaux building in exposed stone, you will enjoy all thecharms of the city thanks to its ideal location. Close to many shops, bars andrestaurants, you can access the apartment by tram A and C and bus routes 27 and 44.",
+        enhanced_cleaning: true,
+        self_checkin: true,
+        amenities: ["Wifi", "Kitchen", "Free Parking"], // you can add more than one
+        price: 200,
+        type: "Entire Unit", // Other options: Room, Whole Villa
+        guests: "4-6",
         bedrooms: 4,
         bathrooms: 2,
         image: [bordeaux,bord1, bord2, bord3, bord4] // you can add more than one

@@ -41,7 +41,7 @@ const AirbnbFooter = () => {
             </div>
         </div>
         <div className='footer_kicker'>
-            <hr />
+            <hr className='locations_hr'/>
             <div className='sub_footer'>
                 <div className='sub_footer-left'>
                     <span>© 2022 Airbnb, Inc.</span>
