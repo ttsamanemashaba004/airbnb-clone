@@ -1,4 +1,5 @@
 import { assets } from "../../../assets/assets";
+import Title from "../Title";
 import CityCard from "./CItyCard";
 import "./InspirationForTrips.css";
 
@@ -27,12 +28,18 @@ const InspirationForTrips = () => {
       title: "Hyde Park Hotel",
       distance: "49",
       color: "#D93B30"
+    },
+    {
+      image: `${assets.joburg}`,
+      title: "Joburg City Hotel",
+      distance: "168",
+      color: "#BC1A6E"
     }
 
   ]
   return (
     <div className="trips_container">
-      <p className="trips_title">Inspiration for your next trip</p>
+      <Title title="Inspiration for your next trip"/>
       <div className="city_cards">
         {
           cities.map((item,index)=>(

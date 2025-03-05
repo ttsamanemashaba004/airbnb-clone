@@ -1,0 +1,8 @@
+.locations_navbar_container {
+  width: 100%;
+  height: fit-content;
+  padding-top: 1.5rem 1.5rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
