@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Left side of navbar  */}
+      {/* Right side of navbar  */}
       <div className="right">
         <p>Become a Host</p>
         <img className="globe" src={assets.globe} alt="" />

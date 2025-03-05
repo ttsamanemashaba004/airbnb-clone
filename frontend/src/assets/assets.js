@@ -23,6 +23,10 @@ import bord1 from './bordeaux_1.png'
 import bord2 from './bordeaux2.png'
 import bord3 from './bordeaux3.png'
 import bord4 from './bordeaux4.png'
+import red_logo from './red_logo.svg'
+import search2 from './search_icon2.svg'
+import globe3 from './globe3.svg'
+import menu2 from './menu2.svg'
 
 
 export const assets = {
@@ -45,7 +49,11 @@ export const assets = {
     dollar,
     facebook,
     twitter,
-    insta
+    insta,
+    red_logo,
+    search2,
+    globe3,
+    menu2
 }
 
 export const products = [
