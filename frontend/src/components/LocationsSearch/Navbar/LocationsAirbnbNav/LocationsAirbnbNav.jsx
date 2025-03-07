@@ -2,11 +2,25 @@ import { Link } from "react-router-dom";
 import { assets } from "../../../../assets/assets";
 import AirbnbSearchLocation from "./AirbnbSearchLocation";
 import "./LocationsAirbnbNav.css";
+import { useContext } from "react";
+import { LocationContext } from "../../../../context/LocationContext";
 
 const LocationsAirbnbNav = () => {
+
+  const { setSelectedHotel, setGuests} = useContext(LocationContext)
+
+  const clearSearchData = () =>{
+    localStorage.removeItem('selectedHotel'),
+    localStorage.removeItem('guests')
+    setSelectedHotel('')
+    setGuests('')
+  }
+
+
+
   return (
     <div className="locationsAirbnb_container">
-      <div className="red_logo">
+      <div className="red_logo" onClick={()=>clearSearchData()}>
         <Link to="/">
           <img src={assets.red_logo} alt="" />
         </Link>

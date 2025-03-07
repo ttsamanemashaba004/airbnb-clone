@@ -5,20 +5,28 @@ import './LocationList.css'
 import { LocationContext } from '../../../context/LocationContext'
 
 const LocationsList = () => {
-  const { locations, currency } = useContext(LocationContext)
-  const [allLocations, setAllLocations] = useState([])
+  const { locations, currency, selectedHotel } = useContext(LocationContext)
+  const [hotels, setHotels] = useState([])
 
   useEffect(()=>{
-    setAllLocations(locations)
-  },[locations])
+    if(selectedHotel !== 'All Hotels'){
+      const filterLocations = locations.filter(location => location.location === selectedHotel)
+      setHotels(filterLocations)
+    }else{
+      setHotels(locations)
+    }
+
+    console.log(selectedHotel)
+    
+  },[locations, selectedHotel])
 
   return (
     <div className='location_list_container'>
-      <p className='locations_text'>{locations.length} stays in Bordeaux</p>
+      <p className='locations_text'>{`${hotels.length} stays ${selectedHotel ==='All Hotels' ? 'available' : `in ${selectedHotel}`}`}</p>
       
       {/* Rendering Locations */}
       {
-        allLocations.map((item,index)=>(
+        hotels.map((item,index)=>(
           <LocationDetails key={index} currency={currency} bath={item.bathrooms} title={item.listing_title} location={item.location} guests={item.guests} type={item.type} bed={item.bedrooms} amenities={item.amenities} price={item.price} image={item.image[0]} />
         ))
       }

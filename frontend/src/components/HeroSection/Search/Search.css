@@ -43,6 +43,10 @@
   position: relative;
 }
 
+.item input{
+  border: none;
+}
+
 .item_end {
   display: flex;
   position: relative;

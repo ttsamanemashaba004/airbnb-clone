@@ -1,23 +1,51 @@
 import { assets } from "../../../assets/assets";
 import DatePicker from "react-datepicker";
 import "./Search.css";
-import { useState } from "react";
+import { useContext } from "react";
+import { LocationContext } from "../../../context/LocationContext";
+import { useNavigate } from "react-router-dom";
 
 const Search = () => {
-  const [checkInDate, setCheckInDate] = useState(null);
-  const [checkOutDate, setCheckOutDate] = useState(null);
+  const {
+    selectedHotel,
+    setSelectedHotel,
+    checkInDate,
+    setCheckInDate,
+    checkOutDate,
+    setCheckOutDate,
+    guests,
+    setGuests,
+  } = useContext(LocationContext);
+  const navigate = useNavigate();
 
+  const handleSelectHotel = (event) => {
+    setSelectedHotel(event.target.value);
+  };
+
+  const handleSearchButton = () => {
+    if (!selectedHotel || !checkInDate || !checkOutDate || !guests) {
+      alert("Please fill in all fields.");
+      return;
+    }
+    navigate("/locations");
+    
+  }
   
 
   return (
     <div className="search_container">
       <div className="item right_border outer outer1">
         <p className="upper_p_tag">Hotels</p>
-        <select className="lower_p_tag" name="options">
+        <select
+          className="lower_p_tag"
+          name="options"
+          onChange={handleSelectHotel}
+        >
           <option value="option1">Select a Hotel</option>
-          <option value="option2">Joburg</option>
-          <option value="option3">Pretoria</option>
-          <option value="option4">Sandton</option>
+          <option value="All Hotels">All Hotels</option>
+          <option value="Bordeaux">Bordeaux</option>
+          <option value="Pretoria">Pretoria</option>
+          <option value="Sandton">Sandton</option>
         </select>
       </div>
       <div className="item right_border inner">
@@ -25,6 +53,8 @@ const Search = () => {
         <DatePicker
           selected={checkInDate}
           onChange={(date) => setCheckInDate(date)}
+          minDate={new Date()}
+          maxDate={checkOutDate}
           placeholderText="Add dates"
           className="lower_p_tag date-picker"
           dateFormat="dd/MM/yyyy"
@@ -39,6 +69,7 @@ const Search = () => {
         <DatePicker
           selected={checkOutDate}
           onChange={(date) => setCheckOutDate(date)}
+          minDate={checkInDate}
           placeholderText="Add dates"
           className="lower_p_tag date-picker"
           dateFormat="dd/MM/yyyy"
@@ -51,9 +82,16 @@ const Search = () => {
       <div className="item_end outer outer2">
         <div className="item">
           <p className="upper_p_tag">Guests</p>
-          <p className="lower_p_tag">Add guests</p>
+          <input
+            type="number"
+            value={guests}
+            placeholder="Add guest"
+            className="lower_p_tag"
+            onChange={(e) => setGuests(e.target.value)}
+            min="1"
+          />
         </div>
-        <div className="search_button">
+        <div className="search_button" onClick={() => handleSearchButton()}>
           <img className="search_icon" src={assets.search} alt="" />
         </div>
       </div>
