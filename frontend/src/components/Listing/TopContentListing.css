@@ -1,0 +1,49 @@
+.top_content_listing{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.top_content_Header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.top_content_title{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.top_content_title .title{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: black;
+}
+
+.avatar{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.top_content__title-left{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.top_content__title-left .text{
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: black;
+}

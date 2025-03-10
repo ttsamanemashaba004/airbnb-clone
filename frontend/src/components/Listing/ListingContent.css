@@ -1,0 +1,6 @@
+.listing_content_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 2rem;
+}

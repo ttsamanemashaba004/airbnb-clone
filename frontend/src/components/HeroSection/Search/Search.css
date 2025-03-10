@@ -27,6 +27,11 @@
   
 }
 
+.react-datepicker_day--disabled-custom{
+  color: #ccc;
+  pointer-events: none;
+}
+
 .react-datepicker-wrapper input {
   
   height: 100%;

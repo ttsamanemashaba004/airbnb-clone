@@ -16,7 +16,7 @@ const LocationsList = () => {
       setHotels(locations)
     }
 
-    console.log(selectedHotel)
+
     
   },[locations, selectedHotel])
 
@@ -27,7 +27,7 @@ const LocationsList = () => {
       {/* Rendering Locations */}
       {
         hotels.map((item,index)=>(
-          <LocationDetails key={index} currency={currency} bath={item.bathrooms} title={item.listing_title} location={item.location} guests={item.guests} type={item.type} bed={item.bedrooms} amenities={item.amenities} price={item.price} image={item.image[0]} />
+          <LocationDetails key={index} id={item._id} currency={currency} bath={item.bathrooms} title={item.listing_title} location={item.location} guests={item.guests} type={item.type} bed={item.bedrooms} amenities={item.amenities} price={item.price} image={item.image[0]} />
         ))
       }
       

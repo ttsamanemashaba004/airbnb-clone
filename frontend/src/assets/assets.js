@@ -29,6 +29,14 @@ import globe3 from './globe3.svg'
 import menu2 from './menu2.svg'
 import heart from './heart.svg'
 import star from './star.svg'
+import charming_bord from './waterfront_bord.jpg'
+import historic from './historic_bord.jpg'
+import rating from './rating.svg'
+import superuser from './superuser.svg'
+import badge from './badge.svg'
+import share from './share.svg'
+import heart2 from './heart2.svg'
+import avatar2 from './avatag2.svg'
 
 
 export const assets = {
@@ -57,7 +65,10 @@ export const assets = {
     globe3,
     menu2,
     heart,
-    star
+    star,
+    rating,
+    superuser,
+    badge, share, heart2, avatar2
 }
 
 export const locations = [
@@ -65,48 +76,54 @@ export const locations = [
         _id: "aaaaa",
         listing_title: "Bordeaux Getaway",
         location: "Bordeaux",
+        country: "France",
+        host: 'Ghazal',
         description: "Come and stay in this superb duplex T2, in the heart of the historic center of Bordeaux.Spacious and bright, in a real Bordeaux building in exposed stone, you will enjoy all thecharms of the city thanks to its ideal location. Close to many shops, bars andrestaurants, you can access the apartment by tram A and C and bus routes 27 and 44.",
         enhanced_cleaning: true,
         self_checkin: true,
         amenities: ["Wifi", "Kitchen", "Free Parking"], // you can add more than one
         price: 200,
         type: "Entire Unit", // Other options: Room, Whole Villa
-        guests: "4-6",
+        guests: "2",
         bedrooms: 4,
         bathrooms: 2,
         image: [bordeaux,bord1, bord2, bord3, bord4] // you can add more than one
 
     },
     {
-        _id: "aaaaa",
-        listing_title: "Bordeaux Getaway",
+        _id: "aaaab",
+        listing_title: "Charming Waterfront Condo",
         location: "Bordeaux",
+        country: "France",
+        host: 'Ghazal',
         description: "Come and stay in this superb duplex T2, in the heart of the historic center of Bordeaux.Spacious and bright, in a real Bordeaux building in exposed stone, you will enjoy all thecharms of the city thanks to its ideal location. Close to many shops, bars andrestaurants, you can access the apartment by tram A and C and bus routes 27 and 44.",
         enhanced_cleaning: true,
         self_checkin: true,
         amenities: ["Wifi", "Kitchen", "Free Parking"], // you can add more than one
         price: 200,
         type: "Entire Unit", // Other options: Room, Whole Villa
-        guests: "4-6",
+        guests: "6",
         bedrooms: 4,
         bathrooms: 2,
-        image: [bordeaux,bord1, bord2, bord3, bord4] // you can add more than one
+        image: [charming_bord] // you can add more than one
 
     },
     {
-        _id: "aaaaa",
-        listing_title: "Bordeaux Getaway",
+        _id: "aaaac",
+        listing_title: "Historic City Center Home",
         location: "Bordeaux",
+        country: "France",
+        host: 'Ghazal',
         description: "Come and stay in this superb duplex T2, in the heart of the historic center of Bordeaux.Spacious and bright, in a real Bordeaux building in exposed stone, you will enjoy all thecharms of the city thanks to its ideal location. Close to many shops, bars andrestaurants, you can access the apartment by tram A and C and bus routes 27 and 44.",
         enhanced_cleaning: true,
         self_checkin: true,
         amenities: ["Wifi", "Kitchen", "Free Parking"], // you can add more than one
         price: 200,
         type: "Entire Unit", // Other options: Room, Whole Villa
-        guests: "4-6",
+        guests: "4",
         bedrooms: 4,
         bathrooms: 2,
-        image: [bordeaux,bord1, bord2, bord3, bord4] // you can add more than one
+        image: [historic] // you can add more than one
 
     }
 ]

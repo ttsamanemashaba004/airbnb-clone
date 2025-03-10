@@ -7,13 +7,17 @@ import { LocationContext } from "../../../../context/LocationContext";
 
 const LocationsAirbnbNav = () => {
 
-  const { setSelectedHotel, setGuests} = useContext(LocationContext)
+  const { setSelectedHotel, setGuests, setCheckInDate, setCheckOutDate, setFormatDateRange} = useContext(LocationContext)
 
   const clearSearchData = () =>{
     localStorage.removeItem('selectedHotel'),
     localStorage.removeItem('guests')
+    localStorage.removeItem('dateRange')
     setSelectedHotel('')
     setGuests('')
+    setCheckInDate('')
+    setCheckOutDate('')
+    setFormatDateRange('')
   }
 
 

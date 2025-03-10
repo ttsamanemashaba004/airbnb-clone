@@ -1,7 +1,7 @@
 import { assets } from "../../../assets/assets";
 import DatePicker from "react-datepicker";
 import "./Search.css";
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import { LocationContext } from "../../../context/LocationContext";
 import { useNavigate } from "react-router-dom";
 
@@ -15,8 +15,25 @@ const Search = () => {
     setCheckOutDate,
     guests,
     setGuests,
+    setFormatDateRange,
+    locations,
   } = useContext(LocationContext);
   const navigate = useNavigate();
+
+  const allLocations = locations.map((item) => item.location);
+
+  const uniqueLocations = [...new Set(allLocations)];
+
+  // const [locations, setLocations] = useState([]);
+
+  // useEffect(() => {
+  //   // Simulate async data fetch
+  //   fetch("/api/locations")                                                        <----------------------------- I will need to do this when I have my backend
+  //     .then(res => res.json())
+  //     .then(data => setLocations(data));
+  // }, []);
+
+  // const uniqueLocations = [...new Set(locations.map(item => item.location))];
 
   const handleSelectHotel = (event) => {
     setSelectedHotel(event.target.value);
@@ -27,10 +44,30 @@ const Search = () => {
       alert("Please fill in all fields.");
       return;
     }
+    setFormatDateRange(formattedDateRange);
     navigate("/locations");
-    
-  }
-  
+  };
+
+  const formattedDateRange = useMemo(() => {
+    if (!checkInDate || !checkOutDate) return "";
+    const checkInMonth = checkInDate.toLocaleString("default", {
+      month: "short",
+    });
+    const checkInDay = checkInDate.getDate();
+    const checkOutMonth = checkOutDate.toLocaleString("default", {
+      month: "short",
+    });
+    const checkOutDay = checkOutDate.getDate();
+
+    if (checkInMonth === checkOutMonth) {
+      return `${checkInMonth} ${checkInDay} - ${checkOutDay}`;
+    } else {
+      return `${checkInMonth} ${checkInDay} - ${checkOutDay} ${checkOutMonth}`;
+    }
+  }, [checkInDate, checkOutDate]);
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
 
   return (
     <div className="search_container">
@@ -43,9 +80,11 @@ const Search = () => {
         >
           <option value="option1">Select a Hotel</option>
           <option value="All Hotels">All Hotels</option>
-          <option value="Bordeaux">Bordeaux</option>
-          <option value="Pretoria">Pretoria</option>
-          <option value="Sandton">Sandton</option>
+          {uniqueLocations.map((loc, index) => (
+            <option key={index} value={loc}>
+              {loc}
+            </option>
+          ))}
         </select>
       </div>
       <div className="item right_border inner">
@@ -55,6 +94,7 @@ const Search = () => {
           onChange={(date) => setCheckInDate(date)}
           minDate={new Date()}
           maxDate={checkOutDate}
+          // excludeDates={getExcludedDates()}
           placeholderText="Add dates"
           className="lower_p_tag date-picker"
           dateFormat="dd/MM/yyyy"
@@ -62,6 +102,13 @@ const Search = () => {
           showYearDropdown
           dropdownMode="select"
           popperClassName="custom-datepicker-popper"
+          dayClassName={(date) => {
+            const currentDate = new Date(date);
+            currentDate.setHours(0, 0, 0, 0);
+            return currentDate < today
+              ? "react-datepicker_day--disabled-custom"
+              : "";
+          }}
         />
       </div>
       <div className="item right_border inner">
@@ -77,6 +124,16 @@ const Search = () => {
           showYearDropdown
           dropdownMode="select"
           popperClassName="custom-datepicker-popper"
+          dayClassName={(date) => {
+            if (!checkInDate) return "";
+            const currentDate = new Date(date);
+            currentDate.setHours(0, 0, 0, 0);
+            const minCheckout = new Date(checkInDate);
+            minCheckout.setHours(0, 0, 0, 0);
+            return currentDate < minCheckout
+              ? "react-datepicker_day--disabled-custom"
+              : "";
+          }}
         />
       </div>
       <div className="item_end outer outer2">

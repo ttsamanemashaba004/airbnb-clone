@@ -22,10 +22,15 @@
   color: black;
   flex: 1;
   position: relative;
+  padding: 0 .2rem;
 }
 
 .gray{
     color: #6B7280;
+}
+
+.attribute.date{
+  font-size: .8rem;
 }
 
 .div::after {

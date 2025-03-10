@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { assets } from "../../../assets/assets";
 import "./LocationDetail.css";
 
@@ -12,14 +13,18 @@ const LocationDetails = ({
   price,
   image,
   currency,
+  id,
 }) => {
   return (
     <>
       <hr className="locations_hr" />
       <div className="location_detail_container">
         <div className="location_img">
-          <img src={image} alt="" className="loc_img" />
+          <Link to={`/listing/${id}`}>
+            <img src={image} alt="" className="loc_img" />
+          </Link>
         </div>
+
         <div className="location_content">
           <div className="location_header">
             <div className="location_title_subtitle">
