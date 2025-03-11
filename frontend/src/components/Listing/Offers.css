@@ -1,0 +1,53 @@
+.offers-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Title */
+.offers-container .title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: black;
+}
+
+/* Offers Columns */
+.offers-container .columns {
+  width: 100%;
+  height: fit-content;
+  gap: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns .column {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+}
+
+.column .airbnb-data-detail {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: black;
+}
+
+/* Button */
+.offers-container .offer-button {
+  width: 30%;
+  height: fit-content;
+}

@@ -7,7 +7,7 @@ const BigCard = () => {
       <img className="hero_image" src={assets.hero} alt="" />
       <div className="text_and_button">
         <span className="text">Not sure where to go? Perfect.</span>
-        <button >{`I'm flexible`}</button>
+        <button className="bigcard_button">{`I'm flexible`}</button>
       </div>
     </div>
   );

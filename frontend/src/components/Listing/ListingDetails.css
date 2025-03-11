@@ -1,0 +1,36 @@
+.listing_left_details_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.data_detail{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+   
+}
+
+.data_detail_title_subtitle{
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+}
+
+.data_detail_title_subtitle{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 150%;
+    color: black;
+}
+
+.data_detail_subtitle{
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #6B7280;
+}

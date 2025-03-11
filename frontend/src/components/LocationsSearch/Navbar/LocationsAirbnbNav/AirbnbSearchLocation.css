@@ -1,6 +1,6 @@
 .search_container_locations {
+  max-width: 400px;
   width: 100%;
-  max-width: 350px;
   height: fit-content;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
   display: flex;

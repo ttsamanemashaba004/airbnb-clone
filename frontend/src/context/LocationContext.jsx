@@ -7,8 +7,8 @@ const LocationContextProvider = (props) => {
   const [selectedHotel, setSelectedHotel] = useState(
     localStorage.getItem("selectedHotel") || ""
   );
-  const [checkInDate, setCheckInDate] = useState("");
-  const [checkOutDate, setCheckOutDate] = useState("");
+  const [checkInDate, setCheckInDate] = useState(localStorage.getItem("checkinDate") || "");
+  const [checkOutDate, setCheckOutDate] = useState(localStorage.getItem("checkoutDate") || "");
   const [formatDateRange, setFormatDateRange] = useState(localStorage.getItem("dateRange") || "");
   const [guests, setGuests] = useState(localStorage.getItem("guests") || "");
   const [hotelData, setHotelData] = useState(false);
@@ -17,9 +17,15 @@ const LocationContextProvider = (props) => {
     localStorage.setItem("selectedHotel", selectedHotel);
     localStorage.setItem("guests", guests);
     localStorage.setItem("dateRange", formatDateRange);
-  }, [selectedHotel, guests, formatDateRange]);
+    localStorage.setItem("checkinDate", checkInDate)
+    localStorage.setItem("checkoutDate", checkOutDate)
+  }, [selectedHotel, guests, formatDateRange, checkInDate, checkOutDate]);
 
   const currency = "$";
+  const weeklyDiscount = 28
+  const cleaningFee = 62
+  const serviceFee = 83
+  const tax = 29
 
   const value = {
     locations,
@@ -35,7 +41,7 @@ const LocationContextProvider = (props) => {
     formatDateRange,
     setFormatDateRange,
     hotelData,
-    setHotelData
+    setHotelData, weeklyDiscount, cleaningFee, serviceFee, tax
   };
 
   return (

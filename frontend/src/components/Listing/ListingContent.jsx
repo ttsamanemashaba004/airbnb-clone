@@ -1,4 +1,4 @@
-import './ListingContent.jsx'
+import './ListingContent.css'
 import ListingLeft from './ListingLeft.jsx'
 import ListingRight from './ListingRight.jsx'
 

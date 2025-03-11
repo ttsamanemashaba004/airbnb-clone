@@ -1,8 +1,8 @@
 .listing_left{
-    width: 100%;
+    width: 70%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    border: 1px solid gray;
+    
 }

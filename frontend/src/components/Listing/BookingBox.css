@@ -1,0 +1,229 @@
+.book_box_container {
+  width: 100%;
+  height: fit-content;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.box_header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_header .price {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.price .dollar_sign_price {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.price .div {
+  color: black;
+}
+
+.price .per_night {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: black;
+}
+
+.box_header .right {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.right .icon_text {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.icon_text > .text1 {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: black;
+}
+
+.right .text {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+}
+
+.box_details {
+  width: 100%;
+  height: fit-content;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+}
+
+.box_details_row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.box_details_row-checkin_out {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.box_details_row-checkin_out.left4 {
+  border-right: 1px solid #d1d5db;
+}
+
+.box_details_row-checkin,
+.box_details_row-checkout {
+  font-weight: 600;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  color: black;
+}
+
+.box_details_row-checkin_date,
+.box_details_row-checkout_date {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #6b7280;
+  border: none;
+}
+
+.myCustomCalendar {
+  color: black;
+}
+
+.myCustomCalendar .react-datepicker__header {
+  background-color: #6b7280;
+}
+
+.react-datepicker.myCustomCalendar {
+  z-index: 1000;
+  position: relative;
+}
+
+.box_button {
+  width: 100%;
+  height: fit-content;
+}
+
+.box_button .boxButton {
+  width: 100%;
+  height: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #de3151;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.box_button .boxButton:hover {
+  background-color: #c02040;
+}
+
+.box_button .boxButton:active {
+  background-color: #a81c37;
+  transform: scale(0.97);
+}
+
+
+
+.box_details_guest {
+  width: 100%;
+  height: fit-content;
+  padding: 0.5rem;
+}
+
+.box_details_guest_text {
+  font-weight: 600;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  color: black;
+}
+
+.box_details_guest_input {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #6b7280;
+  width: 100%;
+  border: none;
+}
+
+.box_text {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #6b7280;
+  text-align: center;
+}
+.box_price_details {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.box_price_details_row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: black;
+  justify-content: space-between;
+}
+
+.weekly_discount {
+  color: #10b981;
+}
+.box_total {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: black;
+  justify-content: space-between;
+}

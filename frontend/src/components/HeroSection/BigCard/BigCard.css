@@ -27,7 +27,7 @@
   letter-spacing: 0%;
 }
 
-button {
+.bigcard_button {
   max-width: 7vw;
   padding: 0.833vw 1.25vw;
   border-radius: 5.2vw;

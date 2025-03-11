@@ -1,0 +1,27 @@
+.lisitng_description_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+ 
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: black;
+}
+
+.listing_description_icon_text{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: .25rem;
+    cursor: pointer;
+}
+
+.show_more{
+    text-decoration: underline;
+}
