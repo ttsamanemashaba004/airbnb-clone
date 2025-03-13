@@ -48,6 +48,20 @@
 
 /* Button */
 .offers-container .offer-button {
-  width: 30%;
+  width: 20%;
   height: fit-content;
+}
+
+.offer-button-base {
+  width: 100%;
+  height: fit-content;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  background-color: white;
 }

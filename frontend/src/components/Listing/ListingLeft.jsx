@@ -4,6 +4,7 @@ import TopContentListing from './TopContentListing'
 import ListingDescription from './ListingDescription'
 import WhereYouSleep from './WhereYouSleep'
 import Offers from './Offers'
+import Dates from './Dates'
 
 const ListingLeft = () => {
   return (
@@ -17,7 +18,7 @@ const ListingLeft = () => {
         <hr />
         <Offers />
         <hr />
-        {/* <Dates /> */}
+        <Dates />
     </div>
   )
 }

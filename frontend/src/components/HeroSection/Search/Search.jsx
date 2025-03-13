@@ -48,6 +48,8 @@ const Search = () => {
     navigate("/locations");
   };
 
+  
+
   const formattedDateRange = useMemo(() => {
     if (!checkInDate || !checkOutDate) return "";
     const checkInMonth = checkInDate.toLocaleString("default", {

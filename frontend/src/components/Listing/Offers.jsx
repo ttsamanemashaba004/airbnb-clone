@@ -140,7 +140,9 @@ const Offers = () => {
           </div>
         </div>
       </div>
-      <div className="offer-button"></div>
+      <div className="offer-button">
+        <button className="offer-button-base">Show all 37 amenities</button>
+      </div>
     </div>
   );
 };

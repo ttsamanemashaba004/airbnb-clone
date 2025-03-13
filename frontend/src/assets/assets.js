@@ -56,8 +56,22 @@ import pet from "./pet.svg";
 import dryer from "./dreyer.svg";
 import security from "./security.svg";
 import bicycle from "./bicycle.svg";
+import keyboard from './keyboard.svg'
+import reviewstar from './review-star.svg'
+import frame from './frame.svg'
+import frame2 from './frame2.svg'
+import frame3 from './frame3.svg'
+import jose from './jose.svg'
+import luke from './luke.svg'
+import Shayna from './Shayna.svg'
+import Josh from './Josh.svg'
+import Vladko from './Vladko.svg'
+import Jennifer from './Jennifer.svg' 
 
 export const assets = {
+  frame, frame2, frame3, jose, luke, Shayna, Josh, Vladko, Jennifer,
+  reviewstar,
+  keyboard,
   garden,
   wifi,
   free_washer,

@@ -1,0 +1,72 @@
+.dates-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* title and subtitle */
+.dates-title-subtitle {
+  width: 100%;
+  height: fit-content;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: black;
+}
+
+.dates-subtitle {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #6b7280;
+}
+
+/* calendar */
+.dates-months {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.dates-months-month {
+  width: 35%;
+  height: fit-content;
+  border-radius: 0.5rem;
+}
+
+.rdrMonthAndYearWrapper select {
+  width: 100%;
+}
+
+/* actions */
+.dates-actions {
+  width: 65%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 36rem;
+}
+
+.dates-actions img{
+    cursor: pointer;
+}
+
+.actions-text {
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  color: black;
+  cursor: pointer;
+}
