@@ -66,11 +66,26 @@ import luke from './luke.svg'
 import Shayna from './Shayna.svg'
 import Josh from './Josh.svg'
 import Vladko from './Vladko.svg'
-import Jennifer from './Jennifer.svg' 
+import Jennifer from './Jennifer.svg'
+import star_icon from './star-icon.svg'
+import shield_icon from './shield-icon.svg'
+import badge_icon from './badge-icon.svg'
+import frame_host1 from './host-frame.svg'
+import clock from './clock.svg'
+import door_enter from './door_enter.svg'
+import shopping from './shopping.svg'
+import fire from './fire.svg'
+import bone from './bone.svg'
+import party from './party.svg'
+import sparkle from './sparkle.svg'
+import spray_spaint from './spray-paint.svg'
+import wind from './wind.svg'
+import washer from './washer.svg'
+import card from './card.svg'
 
 export const assets = {
-  frame, frame2, frame3, jose, luke, Shayna, Josh, Vladko, Jennifer,
-  reviewstar,
+  frame, frame2, frame3, jose, luke, Shayna, Josh, Vladko, Jennifer, star_icon, shield_icon, badge_icon, frame_host1,
+  reviewstar, clock, door_enter, shopping, fire, bone, party, sparkle, spray_spaint, wind, washer, card,
   keyboard,
   garden,
   wifi,

@@ -1,0 +1,69 @@
+.to-know-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.to-know-header {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0%;
+  color: black;
+}
+
+.to-know-columns {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.to-know-column {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.to-know-column-title {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: black;
+}
+
+.to-know-list {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.to-know-icon-text{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+}
+
+.to-know-text{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    color: black; 
+}
+
+.to-know-text-3{
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0%;
+    color: #4B5563;
+}

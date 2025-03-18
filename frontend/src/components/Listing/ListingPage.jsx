@@ -2,6 +2,9 @@ import './ListingPage.css'
 import ImageGrid from './ImageGrid'
 import ListingContent from './ListingContent'
 import Reviews from './Reviews'
+import AboutTheHost from './AboutTheHost'
+import ThingsToKnow from './ThingsToKnow'
+import ListingPreFooter from './ListingPreFooter'
 
 const ListingPage = () => {
   return (
@@ -12,6 +15,10 @@ const ListingPage = () => {
         <Reviews />
         <hr />
         <hr />
+        <AboutTheHost />
+        <hr />
+        <ThingsToKnow />
+        <ListingPreFooter />
     </div>
   )
 }

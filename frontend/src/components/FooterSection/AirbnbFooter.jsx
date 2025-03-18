@@ -44,7 +44,7 @@ const AirbnbFooter = () => {
             <hr className='locations_hr'/>
             <div className='sub_footer'>
                 <div className='sub_footer-left'>
-                    <span>© 2022 Airbnb, Inc.</span>
+                    <span>© 2025 Airbnb, Inc.</span>
                     <div className='ellipse'></div>
                     <span>Privacy</span>
                     <div className='ellipse'></div>
