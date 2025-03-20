@@ -6,6 +6,8 @@ import { useContext } from "react";
 import { LocationContext } from "../../../../context/LocationContext";
 
 const LocationsAirbnbNav = () => {
+
+  const adminUrl = 'https://airbnb-clone-admin.vercel.app/';
   const {
     setSelectedHotel,
     setGuests,
@@ -42,7 +44,7 @@ const LocationsAirbnbNav = () => {
 
       <AirbnbSearchLocation />
       <div className="right_standard_search">
-        <p>Become a Host</p>
+        <p onClick={() => window.location.href = adminUrl}>Become a Host</p>
         <img className="globe" src={assets.globe3} alt="" />
         <div className="profile group rel" onClick={() => token ? null : navigate('/login') }>
           <img className="menu" src={assets.menu} alt="" />
