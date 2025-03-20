@@ -142,41 +142,36 @@ export const assets = {
 
 export const locations = [
   {
-    _id: "aaaaa",
-    listing_title: "Bordeaux Getaway",
-    location: "Bordeaux",
-    country: "France",
-    host: "Ghazal",
-    description:
-      "Come and stay in this superb duplex T2, in the heart of the historic center of Bordeaux.Spacious and bright, in a real Bordeaux building in exposed stone, you will enjoy all thecharms of the city thanks to its ideal location. Close to many shops, bars andrestaurants, you can access the apartment by tram A and C and bus routes 27 and 44.",
-    enhanced_cleaning: true,
-    self_checkin: true,
-    amenities: ["Wifi", "Kitchen", "Garden view", "Pets allowed"], // you can add more than one
+   
+   
+    
+   
+    
+    
+    
+    
+     
     price: 200,
-    type: "Entire Unit", // Other options: Room, Whole Villa
+    
     guests: "2",
-    bedrooms: 1,
-    bathrooms: 2,
-    bed_image: [bord_bed],
-    image: [bordeaux, bord1, bord2, bord3, bord4], // you can add more than one
+   
+    
+    image: [bordeaux, bord1, bord2, bord3, bord4, bord_bed], // you can add more than one
   },
   {
     _id: "aaaab",
-    listing_title: "Charming Waterfront Condo",
-    location: "Bordeaux",
+    
     country: "France",
     host: "Ghazal",
-    description:
-      "Come and stay in this superb duplex T2, in the heart of the historic center of Bordeaux.Spacious and bright, in a real Bordeaux building in exposed stone, you will enjoy all thecharms of the city thanks to its ideal location. Close to many shops, bars andrestaurants, you can access the apartment by tram A and C and bus routes 27 and 44.",
+    
     enhanced_cleaning: true,
     self_checkin: true,
     amenities: ["Wifi", "Kitchen", "Garden view"], // you can add more than one
-    price: 200,
+   
     type: "Entire Unit", // Other options: Room, Whole Villa
     guests: "6",
     bedrooms: 4,
     bathrooms: 2,
-    bed_image: [bord_bed],
     image: [charming_bord], // you can add more than one
   },
   {
@@ -195,7 +190,6 @@ export const locations = [
     guests: "4",
     bedrooms: 4,
     bathrooms: 2,
-    bed_image: [bord_bed],
     image: [historic], // you can add more than one
   },
 ];

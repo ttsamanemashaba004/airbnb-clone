@@ -1,0 +1,81 @@
+
+.reservations-container {
+  width: 100%;
+  height: calc(100vh - 25rem);
+   padding-left: 6rem;
+   padding-right: 6rem;
+   padding-top: 2rem;
+ }
+ 
+
+ .reservations-table-container {
+   
+  
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: fit-content;
+   gap: 1rem;
+ }
+ 
+
+
+ 
+ .reservations-header {
+   color: black;
+   width: 100%;
+   font-size: 1.125rem;
+   line-height: 1.75rem;
+   font-weight: 500;
+ }
+ 
+ .reservations-table {
+   min-width: 100%;
+   text-align: left;
+   border: 1px solid black;
+   border-collapse: collapse;
+ }
+ 
+ .reservations-table thead {
+   background-color: #f9fafb;
+ }
+ 
+ .reservations-table th {
+   padding: 0.75rem 1.5rem;
+   font-size: 0.75rem;
+   line-height: 1rem;
+   font-weight: 500;
+   color: #6b7280;
+   text-transform: uppercase;
+   border-bottom: 1px solid #e5e7eb;
+ }
+ 
+ .reservations-table tbody {
+   background-color: #ffffff;
+ }
+ 
+ .reservations-table tr {
+   border-bottom: 1px solid #e5e7eb;
+ }
+ 
+ .reservations-table td {
+   white-space: nowrap;
+   font-size: 0.875rem;
+   line-height: 1.25rem;
+   color: #111827;
+   padding: 1rem 1.5rem;
+ }
+ 
+ .delete-button {
+   background-color: #ef4444;
+   color: #ffffff;
+   padding: 0.25rem 1rem;
+   border-radius: 0.25rem;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ .delete-button:hover {
+   background-color: #dc2626;
+ }
+ 

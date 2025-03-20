@@ -20,6 +20,8 @@ const Search = () => {
   } = useContext(LocationContext);
   const navigate = useNavigate();
 
+  console.log(locations)
+
   const allLocations = locations.map((item) => item.location);
 
   const uniqueLocations = [...new Set(allLocations)];
@@ -51,22 +53,32 @@ const Search = () => {
   
 
   const formattedDateRange = useMemo(() => {
+    // If either date is missing, return an empty string
     if (!checkInDate || !checkOutDate) return "";
-    const checkInMonth = checkInDate.toLocaleString("default", {
-      month: "short",
-    });
-    const checkInDay = checkInDate.getDate();
-    const checkOutMonth = checkOutDate.toLocaleString("default", {
-      month: "short",
-    });
-    const checkOutDay = checkOutDate.getDate();
-
+  
+    // Convert to Date objects (in case they’re strings)
+    const inDate = new Date(checkInDate);
+    const outDate = new Date(checkOutDate);
+  
+    // Check for invalid dates (e.g., new Date("invalid string"))
+    if (isNaN(inDate.getTime()) || isNaN(outDate.getTime())) {
+      return "";
+    }
+  
+    // Now safely call date methods
+    const checkInMonth = inDate.toLocaleString("default", { month: "short" });
+    const checkInDay = inDate.getDate();
+    const checkOutMonth = outDate.toLocaleString("default", { month: "short" });
+    const checkOutDay = outDate.getDate();
+  
+    // Format the range
     if (checkInMonth === checkOutMonth) {
       return `${checkInMonth} ${checkInDay} - ${checkOutDay}`;
     } else {
       return `${checkInMonth} ${checkInDay} - ${checkOutDay} ${checkOutMonth}`;
     }
   }, [checkInDate, checkOutDate]);
+  
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);

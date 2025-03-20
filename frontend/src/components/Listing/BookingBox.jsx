@@ -1,9 +1,11 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import "./BookingBox.css";
 import { LocationContext } from "../../context/LocationContext";
 import { assets } from "../../assets/assets";
 import DatePicker from "react-datepicker";
 import { differenceInCalendarDays } from "date-fns";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const BookingBox = () => {
   const {
@@ -19,7 +21,44 @@ const BookingBox = () => {
     cleaningFee,
     serviceFee,
     tax,
+    navigate,
+    backendUrl,
+    token,
   } = useContext(LocationContext);
+
+  const onSubmithandler = async (event) => {
+    event.preventDefault();
+
+    // Check if user is logged in by verifying the token
+    if (!token) {
+      toast.error("Please log in to place a reservation.");
+      navigate("/login"); // or open a login modal if you prefer
+      return;
+    }
+
+    // Construct the reservation data payload
+    const reservationData = {
+      propertyId: hotelData._id,
+      checkInDate,
+      checkOutDate,
+    };
+
+    try {
+      console.log("Sending reservationData:", reservationData);
+      const response = await axios.post(
+        backendUrl + "/api/reservation/place",
+        reservationData,
+        { headers: { token } }
+      );
+      toast.success("Reservation placed successfully!");
+      navigate("/reservations");
+    } catch (error) {
+      console.error("Error placing reservation:", error);
+      toast.error(
+        "There was an error processing your reservation. Please try again."
+      );
+    }
+  };
 
   const guestsArray = Array.from({ length: hotelData.guests }, (_, i) => i + 1);
 
@@ -34,10 +73,11 @@ const BookingBox = () => {
 
   const price_per_guest = hotelData.price * guests;
   const nights_total = price_per_guest * nights;
-  const total_price = nights_total + cleaningFee + serviceFee + tax - weeklyDiscount
+  const total_price =
+    nights_total + cleaningFee + serviceFee + tax - weeklyDiscount;
 
   return (
-    <div className="book_box_container">
+    <form onSubmit={onSubmithandler} className="book_box_container">
       <div className="box_header">
         <div className="price">
           <span className="dollar_sign_price">
@@ -153,13 +193,13 @@ const BookingBox = () => {
       </div>
       <hr />
       <div className="box_total">
-      <span>Total</span>
-          <span>
-            {currency}
-            {total_price}
-          </span>
+        <span>Total</span>
+        <span>
+          {currency}
+          {total_price}
+        </span>
       </div>
-    </div>
+    </form>
   );
 };
 
