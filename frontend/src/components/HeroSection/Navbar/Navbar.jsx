@@ -8,6 +8,8 @@ const Navbar = () => {
   const [lineTwo, setLineTwo] = useState(false);
   const [lineThree, setLineThree] = useState(false);
 
+  const adminUrl = 'https://airbnb-clone-admin.vercel.app/';
+
   const { navigate, token, setToken } = useContext(LocationContext);
 
   const logout = () => {
@@ -56,7 +58,7 @@ const Navbar = () => {
 
       {/* Right side of navbar  */}
       <div className="right">
-        <p>Become a Host</p>
+        <p onClick={() => window.location.href = adminUrl}>Become a Host</p>
         <img className="globe" src={assets.globe} alt="" />
         <div
           className="profile group rel"
