@@ -1,6 +1,6 @@
 
 import { useContext, useEffect, useState } from 'react'
-import LocationDetails from './locationDetails'
+import LocationDetails from "./LocationDetails.jsx"
 import './LocationList.css'
 import { LocationContext } from '../../../context/LocationContext'
 
