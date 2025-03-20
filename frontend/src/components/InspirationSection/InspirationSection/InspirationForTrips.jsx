@@ -1,6 +1,6 @@
 import { assets } from "../../../assets/assets";
 import Title from "../Title";
-import CityCard from "./CItyCard";
+import CityCard from "./CityCard";
 import "./InspirationForTrips.css";
 
 const InspirationForTrips = () => {
